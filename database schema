@@ -1,0 +1,14 @@
+Create database if not exists springsecurity;
+use `springsecurity`;
+create table if not exists `users`(
+`username` varchar(50) not null,
+`password` varchar(100) not null,
+`role` varchar (50) not null,
+`enabled` tinyint(1) not null,
+PRIMARY KEY (`username`)
+)ENGINE = innoDB default charset=latin1;
+
+INSERT INTO `users`(`username`,`password`,`role`,`enabled`) VALUES
+('ula','$2a$10$OZdSIPTUQp/0hgx8kc7B4O3Us8m.BPuo.HlUhB7eV4DxzB75vs7KW','ROLE_USER','1'),
+('jan','$2a$10$BBta.CQdCoZxR6JajbfC/O44Ymv.PbudQ7sE4MoYc3DABX/k1iK4C`','ROLE_USER','1'),
+('olek','$2a$10$TXYuIgsMsMTxBOsK4pJPJ.136SMPOLaTDVXA556Qo7zH8HUr2TnFS','ROLE_ADMIN','1');
