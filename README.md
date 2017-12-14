@@ -1,5 +1,5 @@
 # spring-security-demo
-Prosta aplikacja webowa zabezpiczeczona przy pomocy spring security storzona w ramach nauki przy pomocy tutorialu z udemy.com
+Prosta aplikacja webowa zabezpieczona przez spring security, stworzona w ramach nauki przy pomocy tutorialu z udemy.com
 
 Logowanie za pmocą loginu i hasła
 
